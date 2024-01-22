@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{css/hello.css}">
+<title>Insert title here</title>
+</head>
+<body>
+	오늘의 우수회원 : <span class="member_text" th:text="${member}">회원이름 출력될 공간</span><br><br>
+	<img th:src="@{/img/cafe.jpg}">
+</body>
+</html>

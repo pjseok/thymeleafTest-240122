@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<a href="http://www.naver.com">네이버 바로가기(html 문법)</a>
+	</div>
+	<div>
+		<a th:href="@{http://www.naver.com}">네이버 바로가기(thymeleaf 문법)</a>
+	</div>
+	<div>
+		<a href="hyperResult?id=tiger&pw=12345">파라미터 보내기 연습(html 문법)</a>
+	</div>
+	<div>
+		<a th:href="@{hyperResult(id='tiger',pw='12345')}">파라미터 보내기 연습(thymeleaf 문법)</a>
+	</div>
+</body>
+</html>
