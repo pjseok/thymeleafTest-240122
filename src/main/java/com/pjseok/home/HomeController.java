@@ -29,7 +29,6 @@ public class HomeController {
 	
 	@GetMapping(value = "/hyperResult")
 	public String hyperResult(HttpServletRequest request, Model model) {
-		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
