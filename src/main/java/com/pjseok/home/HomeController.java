@@ -48,10 +48,12 @@ public class HomeController {
 			memberDto.setId("tiger"+i);
 			memberDto.setName("길동"+i);
 			memberDto.setEmail("tiger"+i+"@abc.com");
-			memberDto.setAge(+20);
+			memberDto.setAge(i+15);
 			
 			memberDtos.add(memberDto);
 		}
+		
+		model.addAttribute("str", "OK");
 		
 		model.addAttribute("memberDtos", memberDtos);
 		
@@ -59,5 +61,9 @@ public class HomeController {
 		return "ifTest";
 	}
 	
+	@GetMapping(value="/include")
+	public String include() {
+		return "includeTest";
+	}
 	
 }
